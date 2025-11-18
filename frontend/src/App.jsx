@@ -6,11 +6,11 @@ import toast from "react-hot-toast"
 
 const App = () => {
   return (
-  <div data-theme="nord">
+  <div data-theme="nord"  className="bg-white">
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/create" element={<CreatePage />} />
-      <Route path="/note/:id" element={<NoteDetailPage />} />
+      <Route path="/notes/:id" element={<NoteDetailPage />} />
     </Routes>
   </div> 
   );
